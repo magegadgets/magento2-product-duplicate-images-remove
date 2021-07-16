@@ -52,6 +52,7 @@ This Extension allows you to find duplicate product images from your product lis
  ```
     php bin/magento duplicate:remove;
 
+
 ## Other Extensions
 You can find more useful extensions for Magento 2 by visiting [Magegadgets Official Website](https://www.magegadgets.com/)
     ```
