@@ -46,7 +46,7 @@ class Removeduplicate extends Command
             if($base_image != 'no_selection') {
                 $mediaUrl = $storeManager->getStore()->getBaseUrl(\Magento\Framework\UrlInterface::URL_TYPE_MEDIA);
                 $filepath = $path.'/catalog/product' . $base_image ;
-                if (file_exists($filepath)) {
+                if (file_exists($filepath) && is_file($filepath)) {
                     $_md5_values[] = md5(file_get_contents($filepath));            
                 }
                 $i++;
